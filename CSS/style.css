@@ -1,0 +1,238 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+
+/*Navbar Section*/
+
+#navbar{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background-image: linear-gradient(to right, #000, #858080);
+
+}
+
+.nav-first{
+	color:#fff;
+	font-size: 28px;
+	margin-left: 30px;
+}
+
+.menu{
+	display: flex;
+	list-style: none;
+	margin-right: 30px;
+}
+
+.menu li a{
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+	padding:0 10px 0 10px;
+}
+
+/*Home Section*/
+#home{
+	height:80vh;
+	display: flex;
+	margin-top: 70px;
+	justify-content: space-around;
+	background-color: #000;
+
+}
+
+.home-1{
+	color: #fff;
+	margin:150px 0 0 30px;
+	font-size: 28px;
+	font-weight: 600;
+
+}
+
+.icons{
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	margin-top: 20px;
+}
+.icons i{
+	padding: 0 10px 0 10px;
+	font-size: 32px;
+}
+
+.cv-btn{
+	width: 250px;
+	height:40px;
+	background-color: #ff4500;
+	color: #fff;
+	border: none;
+	border-radius: 10px;
+	font-size: 18px;
+	margin: 20px 0 0 40px;
+}
+
+.home-2{
+	margin:60px 40px 0 0; 
+}
+
+.home-2 img{
+	width: 400px;
+	height: 400px;
+}
+
+/*About Me*/
+#aboutme{
+	height:35vh;
+	display: flex;
+	background-color: rgb(34, 34, 34);
+}
+
+.aboutme{
+	
+	justify-content: left;
+	font-size: 28px;
+	font-weight: 200;
+	color: rgb(252, 251, 247);
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.aboutme1 {
+	display: inline-block;
+	justify-content: left;
+	font-size: 22px;
+	font-weight: 100;
+	color: rgb(255, 255, 255);
+	margin: 40px 0 20px 0;
+}
+
+
+
+/*Certificates*/
+
+#certificates{
+	height:50vh;
+	justify-content: space-around;
+	background-color: rgb(80, 79, 79);
+
+}
+
+#certificates span{
+	display: inline-block;
+	font-size: 28px;
+	font-weight: 300;
+	color: #fff;
+	padding-top: 10px;
+	padding-left: 10px;
+	margin: 0 0 10px 0;
+}
+
+.certificates img{
+	display: inline-block;
+	justify-content:space-around;
+	padding: 10px;
+	margin: 20px 30px 20px 20px;
+	width: 320px;
+	height: 220px;
+	
+}
+
+
+/*Contact Me*/
+
+#contactme{
+	height: 60vh;
+	margin-top: 20px;
+}
+
+#contactme span{
+	display: flex;
+	justify-content: center;
+	font-size: 32px;
+	font-weight: 500;
+}
+
+.input-fields{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.input-fields input{
+	width: 250px;
+	height: 40px;
+	margin-top: 20px;
+	border-radius: 10px;
+	border: 1px solid grey;
+	padding-left: 10px;
+}
+
+/*Media Query for Mobile View*/
+
+
+@media screen and (max-width: 480px)
+{
+	#home{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.home-1{
+		margin-top: 50px;
+		font-size: 24px;
+	}
+	.cv-btn{
+		width: 200px;
+	}
+
+	.home-2{
+		margin:0 0 0 0;
+	}
+	.home-2 img{
+		width: 200px;
+		height:200px;
+		padding-top: 60px;
+	}
+	#navbar{
+		display: flex;
+        flex-wrap: wrap;
+	}
+	.menu li a{
+		display: inline-block;
+		font-size: 18px;
+		padding-right: 10px;
+	}
+	#aboutme{
+		height: 45vh;
+		display: flex;
+	}
+	.aboutme{
+		display: inline-block;
+		font-size: 22px;
+	}
+	.aboutme1{
+		display: inline-block;
+		font-size: 18px;
+	}
+	#certificates{
+		height: 100vh;
+		display: grid;
+	}
+	#certificates span{
+		display: inline-block;
+		padding-left: 20px;
+	}
+	.certificates img{
+		width: 180px;
+		height: 120px;
+		margin: 10px 100px 10px 100px;
+		padding:0;
+	}
+}
